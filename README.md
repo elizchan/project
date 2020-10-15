@@ -10,5 +10,23 @@
 * create a .gitignore //write node_modules in the .gitignore file
 * home route
     * app.get('/', (req, res)=>{
-        res.send
+        res.send()
     })
+* import ejs using npm i ejs --> tells texpress that we will use ejs as the view engine
+* html files
+    * app.get('/', (req, res)=>{
+        res.sendFile(__dirname+'where html file is located')
+    })
+* templates
+    * app.get('/', (req, res)=>{
+        res.render('filename.ejs', {key: value})
+    })
+* when using ejs make sure each line starts with <% and ends with %>
+* partials
+    * <%- include('../partials/filename.ejs') %>
+* layouts
+    * npm i express-ejs-layouts
+    * require
+    * app.set('view engine',)
+    * app.use(ejslayouts)
+* run node by typing nodemon in terminal
