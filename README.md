@@ -40,6 +40,11 @@
 
 * sequelize
     * npm i pg sequelize
+    * sequelize init
+    * upgrade mysql to postgres and change database to name of database
+    * sequelize db:create name of database_development
+    * sequelize model:create --name --attributes title:string,....
+    * migrate: sequelize db:migrate
     * const db = require('./models')
     * db.user.create({}).then()
     * db.user.findAll().then()
