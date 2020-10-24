@@ -7,7 +7,7 @@
 * npm i //name of app
 * import nodule by using require('name of nodule')
 * created an instance of an app
-* create a .gitignore //write node_modules in the .gitignore file
+* create a .gitignore //write node_modules and .env in the .gitignore file
 * home route
     * app.get('/', (req, res)=>{
         res.send()
@@ -30,8 +30,13 @@
     * app.set('view engine',)
     * app.use(ejslayouts)
     * make html boilerplate and insert <%- body %> in the body
-* axios
 * run node by typing nodemon in terminal
+
+* ENV
+    * install dotenv
+    * at top of index.js should hav require('dotenv').config()
+    * include API_KEY= and PORT= (do not include space in .env files)
+    * change port to process.env.PORT
 
 * sequelize
     * npm i pg sequelize
