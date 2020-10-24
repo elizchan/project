@@ -29,4 +29,16 @@
     * require
     * app.set('view engine',)
     * app.use(ejslayouts)
+    * make html boilerplate and insert <%- body %> in the body
+* axios
 * run node by typing nodemon in terminal
+
+* sequelize
+    * npm i pg sequelize
+    * const db = require('./models')
+    * db.user.create({}).then()
+    * db.user.findAll().then()
+    * db.user.findOne({where:{}}).then()
+    * db.user.findOrCreate({where:{}, defaults}).then()
+    * db.user.update({}).then(numRowsChanged=>{console.log(numRowsChanged)})
+    * db.user.destroy({}).then(numRowsDeleted=>{console.log(numRowsDeleted)})
